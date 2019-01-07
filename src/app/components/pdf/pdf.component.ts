@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PdfService} from '../../../services/pdf.service';
 
 @Component({
   selector: 'app-root',
@@ -14,17 +15,18 @@ import { Component, OnInit } from '@angular/core';
       [show-all]="true"
       style="display: block;"></pdf-viewer>
   `,
-  styles: []
+  styles: [],
+  providers: [PdfService]
 })
 export class PdfComponent implements OnInit {
 
   page: number = 1;
   pdfSrc: string = '';
 
-  constructor() { }
+  constructor(private pdfService: PdfService) { }
 
   ngOnInit() {
-    this.pdfSrc
+    this.pdfSrc = this.pdfService.getPDF();
   }
 
   onFileSelected() {
