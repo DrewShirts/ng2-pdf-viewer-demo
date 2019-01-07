@@ -22,9 +22,11 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
+    "webpack-dev-server": ">=3.1.11",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "adm-zip": "^0.4.13",
     "@angular/compiler-cli": "^6.0.3",
     "@angular-devkit/build-angular": "~0.6.8",
     "typescript": "~2.7.2",
@@ -42,8 +44,8 @@
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
-    "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "adm-zip": "^0.4.13"
+    "ts-node": "~5.0.1",
+    "webpack-dev-server": ">=3.1.11"
   }
 }
